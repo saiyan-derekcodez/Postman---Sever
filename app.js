@@ -3,7 +3,7 @@ import db from './db.json' assert {type: "json"};
 import bodyParser from "body-parser";
 const app = express();
 
-app.set(bodyParser.urlencoded({extended: true}))
+app.use(bodyParser.urlencoded({extended: true}))
 
 app.get('/', (req, res) => {
     res.status(200).json(db);
@@ -22,9 +22,9 @@ app.get('/blog', (req,res) => {
 })
 
 app.post('/addBlog', (req, res) => {
-    console.log(req.body)
+    db.push(req.body);
 
-    res.end
+    res.end();
 })
 
 app.listen(3000, (req, res) => {
