@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "author": "Emmanuel",
+        "title": "Blog #1",
+        "content": "Lorem ipsum"
+    },
+    {
+        "id": 2,
+        "author": "James",
+        "title": "Blog #2",
+        "content": "Lorem ipsum fahuse"
+    }
+]
